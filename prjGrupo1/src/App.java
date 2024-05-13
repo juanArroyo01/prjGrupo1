@@ -23,7 +23,7 @@ public class App {
          * Y de esa forma ya se ejecuta el codigo ingresdo dentro de aquel metodo.
          */
 
-        char aux, symb;
+        char symb;
         String auxString;
         int size = 0;
         boolean isCorrect = false;
@@ -44,7 +44,6 @@ public class App {
 
             if (isCorrect) {
                 size = Integer.valueOf(auxString);
-                System.out.println(size);
                 if (size <= 4) {
                     System.out.println("\nHa ingresado un bajo del limite, ingrese nuevamente...\n");
                 } else {

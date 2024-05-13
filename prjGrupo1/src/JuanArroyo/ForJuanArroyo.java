@@ -9,8 +9,14 @@ public class ForJuanArroyo {
             System.out.print(symb);
         }
 
-        for (int i = 0; i < auxDec - 2; i++) { // Separacion de letras
-            System.out.print(' ');
+        if (size > 10) {
+            for (int i = 0; i < auxDec - 6; i++) { // Separacion de letras
+                System.out.print(' ');
+            }
+        } else {
+            for (int i = 0; i < auxDec - 2; i++) { // Separacion de letras
+                System.out.print(' ');
+            }
         }
 
         System.out.print(symb);
@@ -38,9 +44,20 @@ public class ForJuanArroyo {
 
             }
             if (i == (size / 2) - 1) {
-                for (int j = 0; j < size; j++) {
-                    System.out.print("\b");
+                if (size > 6 && size < 10) {
+                    for (int j = 0; j < size + 2; j++) {
+                        System.out.print("\b");
+                    }
+                } else if (size > 10) {
+                    for (int j = 0; j < (size * 1.5); j++) {
+                        System.out.print("\b");
+                    }
+                } else {
+                    for (int j = 0; j < (size + 1); j++) {
+                        System.out.print("\b");
+                    }
                 }
+
                 for (int k = 0; k < size; k++) {
                     System.out.print(symb);
                 }
