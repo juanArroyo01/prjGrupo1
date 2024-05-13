@@ -1,20 +1,20 @@
 package juanarroyo;
 
-public class ForJuanArroyo {
+public class WhileJuanArroyo {
 
-    public void forNombreApellidoJA(int size, char symb) {
-        int auxDec = size, auxInc = 1;
+    public void whileNombreApellidoJA(int size, char symb) {
+        int auxDec = size, auxInc = 1, i = 0, j = 0, k = 0, l = 0, m = 0, n = 0;
 
-        for (int j = 0; j < size; j++) { // Imprime la raya de la jota
+        while (i++ < size) {
             System.out.print(symb);
         }
 
         if (size > 10) {
-            for (int i = 0; i < auxDec - 6; i++) { // Separacion de letras
+            while (j++ < (auxDec - 6)) {
                 System.out.print(' ');
             }
         } else {
-            for (int i = 0; i < auxDec - 2; i++) { // Separacion de letras
+            while (j++ < (auxDec - 2)) {
                 System.out.print(' ');
             }
         }
@@ -23,53 +23,69 @@ public class ForJuanArroyo {
 
         System.out.println();
 
-        for (int i = 0; i < size - 2; i++) { // Imprime el palo de la jota
-            for (int j = 0; j < size - 1; j++) {
+        while (k++ < (size - 2)) {
+            while (l++ < (size - 1)) {
+                if (l == size / 2) {
+                    System.out.print(symb);
 
-                if (j == size / 2) {
-                    System.out.print(symb);
-                    for (int k = 0; k < auxDec; k++) {
+                    while (m++ < auxDec) {
                         System.out.print(' ');
                     }
+
                     System.out.print(symb);
-                    for (int k = 0; k < auxInc; k++) {
+
+                    m = 0;
+
+                    while (m++ < auxInc) {
                         System.out.print(' ');
                     }
+
+                    m = 0;
+
                     System.out.print(symb);
+
                     auxInc += 2;
+
                     auxDec--;
                 } else {
                     System.out.print(' ');
                 }
-
             }
+            l = 0;
 
-            if (i == (size / 2) - 1) {
+            if (k == (size / 2) - 1) {
                 if (size > 6 && size < 10) {
-                    for (int j = 0; j < size + 2; j++) {
+                    while (n++ < (size + 2)) {
                         System.out.print("\b");
                     }
+                    n = 0;
                 } else if (size > 10) {
-                    for (int j = 0; j < (size * 1.5); j++) {
+                    while (n++ < (size * 1.5)) {
                         System.out.print("\b");
                     }
+                    n = 0;
                 } else {
-                    for (int j = 0; j < (size + 1); j++) {
+                    while (n++ < (size + 1)) {
                         System.out.print("\b");
                     }
+                    n = 0;
                 }
 
-                for (int k = 0; k < size; k++) {
+                while (n++ < size) {
                     System.out.print(symb);
                 }
+                n = 0;
             }
+
             System.out.println();
         }
+        k = 0;
 
-        for (int i = 0; i <= size / 2; i++) { // Imprime el de la jota
+        while (k++ < (size / 2)) {
             System.out.print(symb);
         }
 
+        k = 0;
     }
 
 }
