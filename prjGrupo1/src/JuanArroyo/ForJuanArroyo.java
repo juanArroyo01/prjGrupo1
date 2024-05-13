@@ -38,7 +38,9 @@ public class ForJuanArroyo {
 
             }
             if (i == (size / 2) - 1) {
-                System.out.print("\b\b\b\b\b\b\b\b\b");
+                for (int j = 0; j < size; j++) {
+                    System.out.print("\b");
+                }
                 for (int k = 0; k < size; k++) {
                     System.out.print(symb);
                 }

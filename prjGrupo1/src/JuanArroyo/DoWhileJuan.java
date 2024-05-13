@@ -1,4 +1,4 @@
-package JuanArroyo;
+package juanarroyo;
 
 public class DoWhileJuan {
     
