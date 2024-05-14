@@ -1,18 +1,19 @@
 package marlonchimarro;
 
 public class forMarlonM {
-    public void impresionforM(){
-        System.out.println("forMarlonM");
-        for(int i=1;i<=5;i++){
-            for(int j=1;j<=5;j++){
-                if(j==1||j==5||(i+j==6 & i<=3)||(i==j & i<=2)){
-                    System.out.print("*");
-                }
-                else
+    public void formarlonm(int size, char symb) {
+
+        System.out.println("Impresion '" + symb + "' patron:");
+        for (int i = 1; i <= size; i++) {
+            for (int j = 1; j <= size; j++) {
+                if (j == 1 || j == size || (i + j == size + 1 && i <= size / 2 + 1) || (i == j && i <= size / 2)) {
+                    System.out.print(symb);
+                } else {
                     System.out.print(" ");
+                }
             }
             System.out.println();
         }
-    }
 
+    }
 }
