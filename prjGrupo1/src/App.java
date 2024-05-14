@@ -1,8 +1,6 @@
 import java.util.Scanner;
 
-import juanarroyo.ForArroyo;
-import juanarroyo.ForJuan;
-import juanarroyo.ForJuanArroyo;
+import juanarroyo.*;
 
 public class App {
     public static void main(String[] args) throws Exception {
