@@ -13,7 +13,7 @@ import juanarroyo.WhileJuanArroyo;
 public class App {
     public static void main(String[] args) throws Exception {
         Scanner keyboard = new Scanner(System.in);
-
+        
         /*
          * ForJuan fj = new ForJuan();
          * ForArroyo fa = new ForArroyo();

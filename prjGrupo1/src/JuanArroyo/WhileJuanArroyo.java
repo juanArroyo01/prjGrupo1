@@ -1,7 +1,6 @@
 package juanarroyo;
 
 public class WhileJuanArroyo {
-    
 
     public void whileNombreApellidoJA(int size, char symb) {
         int auxDec = size, auxInc = 1, i = 0, j = 0, k = 0, l = 0, m = 0, n = 0;
@@ -10,8 +9,8 @@ public class WhileJuanArroyo {
             System.out.print(symb);
         }
 
-        if (size > 10) {
-            while (j++ < (auxDec - 6)) {
+        if (size >= 10) {
+            while (j++ < (auxDec - 5)) {
                 System.out.print(' ');
             }
         } else {
@@ -60,7 +59,7 @@ public class WhileJuanArroyo {
                         System.out.print("\b");
                     }
                     n = 0;
-                } else if (size > 10) {
+                } else if (size >= 10) {
                     while (n++ < (size * 1.5)) {
                         System.out.print("\b");
                     }
