@@ -14,7 +14,7 @@ public class ForJuanArroyo {
                 System.out.print(' ');
             }
         } else {
-            for (int i = 0; i < auxDec - 2; i++) { // Separacion de letras
+            for (int i = 0; i < auxDec - 1; i++) { // Separacion de letras
                 System.out.print(' ');
             }
         }

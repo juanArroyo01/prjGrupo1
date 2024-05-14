@@ -14,7 +14,7 @@ public class WhileJuanArroyo {
                 System.out.print(' ');
             }
         } else {
-            while (j++ < (auxDec - 2)) {
+            while (j++ < (auxDec - 1)) {
                 System.out.print(' ');
             }
         }
@@ -25,7 +25,7 @@ public class WhileJuanArroyo {
 
         while (k++ < (size - 2)) {
             while (l++ < (size - 1)) {
-                if (l == size / 2) {
+                if (l == (size / 2) + 1) {
                     System.out.print(symb);
 
                     while (m++ < auxDec) {
@@ -53,7 +53,7 @@ public class WhileJuanArroyo {
             }
             l = 0;
 
-            if (k == (size / 2) - 1) {
+            if (k == (size / 2)) {
                 if (size > 6 && size < 10) {
                     while (n++ < (size + 2)) {
                         System.out.print("\b");

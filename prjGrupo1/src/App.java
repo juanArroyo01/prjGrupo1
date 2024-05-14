@@ -1,16 +1,30 @@
 import java.util.Scanner;
 
+import juanarroyo.WhileArroyo;
+import juanarroyo.DoWhileArroyo;
+import juanarroyo.DoWhileJuan;
+import juanarroyo.DoWhileJuanArroyo;
 import juanarroyo.ForArroyo;
 import juanarroyo.ForJuan;
 import juanarroyo.ForJuanArroyo;
+import juanarroyo.WhileJuan;
+import juanarroyo.WhileJuanArroyo;
 
 public class App {
     public static void main(String[] args) throws Exception {
         Scanner keyboard = new Scanner(System.in);
 
-        ForJuan fj = new ForJuan();
-        ForArroyo fa = new ForArroyo();
-        ForJuanArroyo fja = new ForJuanArroyo();
+        /*
+         * ForJuan fj = new ForJuan();
+         * ForArroyo fa = new ForArroyo();
+         * ForJuanArroyo fja = new ForJuanArroyo();
+         * WhileJuan wj = new WhileJuan();
+         * WhileArroyo wa = new WhileArroyo();
+         * WhileJuanArroyo wja = new WhileJuanArroyo();
+         * DoWhileJuan dwj = new DoWhileJuan();
+         * DoWhileArroyo dwa = new DoWhileArroyo();
+         * DoWhileJuanArroyo dwja = new DoWhileJuanArroyo();
+         */
 
         /*
          * ForJuan ja = new ForJuan();
@@ -77,11 +91,26 @@ public class App {
          * Y se imprimira su letra
          */
 
-        fj.forNombreJ(size, symb);
-        System.out.println("\n");
-        fa.forApellidoA(size, symb);
-        System.out.println("\n");
-        fja.forNombreApellidoJA(size, symb);
+        /*
+         * System.out.println("For - Juan Arroyo");
+         * fj.forNombreJ(size, symb);
+         * System.out.println("\n");
+         * fa.forApellidoA(size, symb);
+         * System.out.println("\n");
+         * fja.forNombreApellidoJA(size, symb);
+         * System.out.println("\n\nWhile - Juan Arroyo");
+         * wj.whileNombreJ(size, symb);
+         * System.out.println("\n");
+         * wa.whileApellidoA(size, symb);
+         * System.out.println("\n");
+         * wja.whileNombreApellidoJA(size, symb);
+         * System.out.println("\n\nDo While - Juan Arroyo");
+         * dwj.doWhileNombreJ(size, symb);
+         * System.out.println("\n");
+         * dwa.doWhileApellido(size, symb);
+         * System.out.println("\n");
+         * dwja.doWhileNombreApellidoJA(size, symb);
+         */
 
         keyboard.close();
     }
