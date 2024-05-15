@@ -4,6 +4,14 @@ public class App {
     public static void main(String[] args) throws Exception {
         Scanner keyboard = new Scanner(System.in);
 
+        ForCasaC fc = new ForCasaC();
+        ForStalinS fs= new ForStalinS();
+        ForStalinCasaSC fcs = new ForStalinCasaSC();
+        WhileCasaC wc= new WhileCasaC();
+        WhileStalinS ws= new WhileStalinS();
+        WhileStalinCasaSC wsc = new WhileStalinCasaSC();
+
+
         /*
          * ForJuan ja = new ForJuan();
          * 
@@ -14,6 +22,9 @@ public class App {
          * 
          * Y de esa forma ya se ejecuta el codigo ingresdo dentro de aquel metodo.
          */
+        
+        
+
 
         char aux, symb;
         String auxString;
@@ -21,6 +32,7 @@ public class App {
         boolean isCorrect = false;
 
         System.out.println("\n--> Taller 1 <--\n");
+        
 
         do {
             System.out.print("-> Ingrese un tamaño definido mayor a 3: ");
@@ -50,15 +62,23 @@ public class App {
                 isCorrect = false;
             }
         } while (!isCorrect);
-
+        
         /*
          * Al crear su clase objeto y haber implementado, acontinuacion deben realizar:
          * ja.forNombre(size, symb);
          * 
          * Y se imprimira su letra
          */
-
+        
         System.out.println("Size: " + size + ", Symb: " + symb);
+       /*  fc.forApellidoC(size, symb);
+        fs.forNombreS(size,symb);
+        fcs.imprimirIniciales(size,symb);
+        wc.whileApellidoC(size, symb);
+        wsc.whileNombreApellido(size,symb);
+        */
+        ws.whileNombreS(size,symb);
+        
 
         keyboard.close();
     }
