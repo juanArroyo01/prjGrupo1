@@ -48,7 +48,17 @@ public class App {
          * forChimarroC fc = new forChimarroC();
          * forMarlonChimarroMC fmc = new forMarlonChimarroMC();
          */
-        
+       
+       /*  DoWhileCasaC dwcc= new DoWhileCasaC ();
+        DoWhileStalinS dws = new DoWhileStalinS();
+        DoWhileStalinCasaSC dwsc = new DoWhileStalinCasaSC();
+        WhileCasaC wcc= new WhileCasaC();
+        WhileStalinS ws = new WhileStalinS();
+        WhileStalinCasaSC wsc = new WhileStalinCasaSC();
+        ForCasaC fcc= new ForCasaC();
+        ForStalinS fcs= new ForStalinS();
+        ForStalinCasaSC Fcsc = new ForStalinCasaSC();  
+        */   
         
          /*
          * ForJuan ja = new ForJuan();
@@ -156,6 +166,28 @@ public class App {
          * System.out.println("\n");
          * dwmc.dowhilemarlonchimarromc(size, symb); 
          */
+       
+       /*   System.out.println("For-StalinCasaSC");
+        fcs.forNombreS(size,symb);
+        System.out.println("\n");
+        fcc.forApellidoC(size, symb);
+        System.out.println("\n");
+        Fcsc.imprimirIniciales(size,symb);
+        System.out.println("\n\nWhile - StalinCasa");
+        ws.whileNombreS(size, symb);
+        System.out.println("\n");
+        wcc.whileApellidoC(size, symb);
+        System.out.println("\n");
+        wsc.whileNombreApellido(size,symb);
+        System.out.println("\n\nDo While - StalinCasa");
+        dws.imprimirDoWhileS(size,symb);
+        System.out.println("\n");
+        dwcc.doWhileApellidoC (size,symb);
+        System.out.println("\n");
+        dwsc.doWhileNomApeliSC(size,symb);
+        */
+
+        
 
 
         keyboard.close();

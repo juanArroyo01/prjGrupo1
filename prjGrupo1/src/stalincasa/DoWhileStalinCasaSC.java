@@ -21,7 +21,9 @@ public class DoWhileStalinCasaSC {
                 }
                 j++;
             } while (j <= size);
-
+            i++;
+            System.out.println();
+            
         } while (i <= size);
     }
 }
