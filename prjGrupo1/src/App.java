@@ -9,21 +9,16 @@ public class App {
     public static void main(String[] args) throws Exception {
         Scanner keyboard = new Scanner(System.in);
 
-        /* 
-         * ForCasa fc = new ForCasa();
-         * ForAntonela fa= new ForAntonela();
-         * ForAntonelaCasa fac= new ForAntonelaCasa();
-         * WhileCasa wc= new WhileCasa();
-         * WhileAntonela wa= new WhileAntonela();
-         * WhileAntonelaCasa wac= new WhileAntonelaCasa();
-         * DoWhileCasa dwc= new DoWhileCasa();
-         * DoWhileAntonela dwa= new DoWhileAntonela();
-         * DoWhileAntonelaCasa dwac= new DoWhileAntonelaCasa();
-        */
-        
-        
+        ForCasa fca = new ForCasa();
+        ForAntonela fan = new ForAntonela();
+        ForAntonelaCasa fac = new ForAntonelaCasa();
+        WhileCasa wca = new WhileCasa();
+        WhileAntonela wan = new WhileAntonela();
+        WhileAntonelaCasa wac = new WhileAntonelaCasa();
+        DoWhileCasa dwca = new DoWhileCasa();
+        DoWhileAntonela dwan = new DoWhileAntonela();
+        DoWhileAntonelaCasa dwac = new DoWhileAntonelaCasa();
 
-        
         ForJuan fj = new ForJuan();
         ForArroyo fa = new ForArroyo();
         ForJuanArroyo fja = new ForJuanArroyo();
@@ -33,7 +28,6 @@ public class App {
         DoWhileJuan dwj = new DoWhileJuan();
         DoWhileArroyo dwa = new DoWhileArroyo();
         DoWhileJuanArroyo dwja = new DoWhileJuanArroyo();
-         
 
         whileMarlonM wm = new whileMarlonM();
         whileChimarroC wc = new whileChimarroC();
@@ -188,19 +182,15 @@ public class App {
         System.out.println("\n");
         dwjb.DoWhileNombreApellidoJB(size, symb);
 
-
-        /* 
-         * fc.forCasac(size, symb);
-         * fa.forAntonelaA(size, symb);
-         * fac.forAntonelaCasaAC(size, symb, symb);
-         * wc.whileCasaC(size, symb);
-         * wa.whileAntonelaA(size, symb);
-         * wac.whileAntonelaCasaAC(size, symb, symb);
-         * dwc.dowhileCasaC(size, symb);
-         * dwa.dowhileAntonelaA(size, symb);
-         * dwac.dowhileAntonelaCasaAC(size, symb, symb);
-        */
-        
+        fca.forCasac(size, symb);
+        fan.forAntonelaA(size, symb);
+        fac.forAntonelaCasaAC(size, symb, symb);
+        wca.whileCasaC(size, symb);
+        wan.whileAntonelaA(size, symb);
+        wac.whileAntonelaCasaAC(size, symb, symb);
+        dwca.dowhileCasaC(size, symb);
+        dwan.dowhileAntonelaA(size, symb);
+        dwac.dowhileAntonelaCasaAC(size, symb, symb);
 
         keyboard.close();
     }
