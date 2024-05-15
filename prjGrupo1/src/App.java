@@ -66,12 +66,12 @@ public class App {
 
         System.out.println("\n--> Taller 1 <--\n");
 
-        while (true) {
+        do {
             System.out.print("-> Ingrese un tamaño definido mayor a 4: ");
             auxString = keyboard.nextLine();
 
-            for (int i = 0; i < auxString.length(); i++) {
-                if (!Character.isDigit(auxString.charAt(i))) {
+            for (Character character : auxString.toCharArray()) {
+                if (!Character.isDigit(character) || auxString.length() != 1) {
                     isCorrect = false;
                 } else {
                     isCorrect = true;
@@ -86,10 +86,11 @@ public class App {
                     break;
                 }
             } else {
-                System.out.println("\nHa ingresado un valor no numérico, ingrese nuevamente...\n");
+                System.out.println(
+                        "\nHa ingresado un valor no numérico o ingreso dos o mas caracteres, ingrese nuevamente...\n");
                 size = -1;
             }
-        }
+        } while (!isCorrect);
 
         isCorrect = false;
 
@@ -125,7 +126,7 @@ public class App {
         System.out.println("\n");
         dwja.doWhileNombreApellidoJA(size, symb);
 
-        System.out.println("For - MarlonChimarroMC");
+        System.out.println("\nFor - MarlonChimarroMC");
         fm.formarlonm(size, symb);
         System.out.println("\n");
         fc.forchimarroc(size, symb);
@@ -144,7 +145,7 @@ public class App {
         System.out.println("\n");
         dwmc.dowhilemarlonchimarromc(size, symb);
 
-        System.out.println("For-StalinCasaSC");
+        System.out.println("\nFor-StalinCasaSC");
         fcs.forNombreS(size, symb);
         System.out.println("\n");
         fcc.forApellidoC(size, symb);
@@ -163,7 +164,7 @@ public class App {
         System.out.println("\n");
         dwsc.doWhileNomApeliSC(size, symb);
 
-        System.out.println("For - Jake Benavides");
+        System.out.println("\nFor - Jake Benavides");
         fjj.forNombreJ(size, symb);
         System.out.println("\n");
         fb.ForApellidoB(size, symb);
@@ -182,14 +183,23 @@ public class App {
         System.out.println("\n");
         dwjb.DoWhileNombreApellidoJB(size, symb);
 
+        System.out.println("\nFor - Antonela Casa");
         fca.forCasac(size, symb);
+        System.out.println("\n");
         fan.forAntonelaA(size, symb);
+        System.out.println("\n");
         fac.forAntonelaCasaAC(size, symb, symb);
+        System.out.println("\n\nWhile - Antonela Casa");
         wca.whileCasaC(size, symb);
+        System.out.println("\n");
         wan.whileAntonelaA(size, symb);
+        System.out.println("\n");
         wac.whileAntonelaCasaAC(size, symb, symb);
+        System.out.println("\n\nDo While - Antonela Casa");
         dwca.dowhileCasaC(size, symb);
+        System.out.println("\n");
         dwan.dowhileAntonelaA(size, symb);
+        System.out.println("\n");
         dwac.dowhileAntonelaCasaAC(size, symb, symb);
 
         keyboard.close();
