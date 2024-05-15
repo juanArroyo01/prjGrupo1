@@ -36,6 +36,7 @@ public class App {
          * DoWhileJuanArroyo dwja = new DoWhileJuanArroyo();
          */
 
+
         /*
          * whileMarlonM wm = new whileMarlonM();
          * whileChimarroC wc = new whileChimarroC();
@@ -134,7 +135,7 @@ public class App {
          * System.out.println("\n");
          * dwja.doWhileNombreApellidoJA(size, symb);
          */
-        
+
          /*
          * System.out.println("For - MarlonChimarroMC");
          * fm.formarlonm(size, symb);
@@ -155,6 +156,7 @@ public class App {
          * System.out.println("\n");
          * dwmc.dowhilemarlonchimarromc(size, symb); 
          */
+
 
         keyboard.close();
     }
