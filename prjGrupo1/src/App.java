@@ -1,10 +1,33 @@
 import java.util.Scanner;
 
+import antonelacasa.DoWhileAntonela;
+import antonelacasa.DoWhileAntonelaCasa;
+import antonelacasa.DoWhileCasa;
+import antonelacasa.ForAntonela;
+import antonelacasa.ForAntonelaCasa;
+import antonelacasa.ForCasa;
+import antonelacasa.WhileAntonela;
+import antonelacasa.WhileAntonelaCasa;
+import antonelacasa.WhileCasa;
 import juanarroyo.*;
 
 public class App {
     public static void main(String[] args) throws Exception {
         Scanner keyboard = new Scanner(System.in);
+
+        /* 
+         * ForCasa fc = new ForCasa();
+         * ForAntonela fa= new ForAntonela();
+         * ForAntonelaCasa fac= new ForAntonelaCasa();
+         * WhileCasa wc= new WhileCasa();
+         * WhileAntonela wa= new WhileAntonela();
+         * WhileAntonelaCasa wac= new WhileAntonelaCasa();
+         * DoWhileCasa dwc= new DoWhileCasa();
+         * DoWhileAntonela dwa= new DoWhileAntonela();
+         * DoWhileAntonelaCasa dwac= new DoWhileAntonelaCasa();
+        */
+        
+        
 
         /*
          * ForJuan fj = new ForJuan();
@@ -103,6 +126,20 @@ public class App {
          * System.out.println("\n");
          * dwja.doWhileNombreApellidoJA(size, symb);
          */
+
+
+        /* 
+         * fc.forCasac(size, symb);
+         * fa.forAntonelaA(size, symb);
+         * fac.forAntonelaCasaAC(size, symb, symb);
+         * wc.whileCasaC(size, symb);
+         * wa.whileAntonelaA(size, symb);
+         * wac.whileAntonelaCasaAC(size, symb, symb);
+         * dwc.dowhileCasaC(size, symb);
+         * dwa.dowhileAntonelaA(size, symb);
+         * dwac.dowhileAntonelaCasaAC(size, symb, symb);
+        */
+        
 
         keyboard.close();
     }
