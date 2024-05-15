@@ -1,18 +1,55 @@
 import java.util.Scanner;
 
+import juanarroyo.WhileArroyo;
+import juanarroyo.DoWhileArroyo;
+import juanarroyo.DoWhileJuan;
+import juanarroyo.DoWhileJuanArroyo;
+import juanarroyo.ForArroyo;
+import juanarroyo.ForJuan;
+import juanarroyo.ForJuanArroyo;
+import juanarroyo.WhileJuan;
+import juanarroyo.WhileJuanArroyo;
+
+import marlonchimarro.forChimarroC;
+import marlonchimarro.doWhileChimarroC;
+import marlonchimarro.doWhileMarlonM;
+import marlonchimarro.whileChimarroC;
+import marlonchimarro.whileMarlonM;
+import marlonchimarro.whileMarlonChimarroMC;
+import marlonchimarro.doWhileMarlonChimarroMC;
+import marlonchimarro.forMarlonM;
+import marlonchimarro.forMarlonChimarroMC;
+
 public class App {
     public static void main(String[] args) throws Exception {
         Scanner keyboard = new Scanner(System.in);
-
-        ForCasaC fc = new ForCasaC();
-        ForStalinS fs= new ForStalinS();
-        ForStalinCasaSC fcs = new ForStalinCasaSC();
-        WhileCasaC wc= new WhileCasaC();
-        WhileStalinS ws= new WhileStalinS();
-        WhileStalinCasaSC wsc = new WhileStalinCasaSC();
-
+        
+        /*
+         * ForJuan fj = new ForJuan();
+         * ForArroyo fa = new ForArroyo();
+         * ForJuanArroyo fja = new ForJuanArroyo();
+         * WhileJuan wj = new WhileJuan();
+         * WhileArroyo wa = new WhileArroyo();
+         * WhileJuanArroyo wja = new WhileJuanArroyo();
+         * DoWhileJuan dwj = new DoWhileJuan();
+         * DoWhileArroyo dwa = new DoWhileArroyo();
+         * DoWhileJuanArroyo dwja = new DoWhileJuanArroyo();
+         */
 
         /*
+         * whileMarlonM wm = new whileMarlonM();
+         * whileChimarroC wc = new whileChimarroC();
+         * whileMarlonChimarroMC wmc = new whileMarlonChimarroMC();
+         * doWhileMarlonM dwm = new doWhileMarlonM();
+         * doWhileChimarroC dwc = new doWhileChimarroC();
+         * doWhileMarlonChimarroMC dwmc = new doWhileMarlonChimarroMC();
+         * forMarlonM fm = new forMarlonM();
+         * forChimarroC fc = new forChimarroC();
+         * forMarlonChimarroMC fmc = new forMarlonChimarroMC();
+         */
+        
+        
+         /*
          * ForJuan ja = new ForJuan();
          * 
          * De esta forma se crea el objeto clase.
@@ -21,37 +58,43 @@ public class App {
          * ja.forNombre(parametro 1, parametro 2);
          * 
          * Y de esa forma ya se ejecuta el codigo ingresdo dentro de aquel metodo.
-         * //
          */
-        
-        
 
-
-        char aux, symb;
+        char symb;
         String auxString;
         int size = 0;
         boolean isCorrect = false;
 
         System.out.println("\n--> Taller 1 <--\n");
-        
 
-        do {
-            System.out.print("-> Ingrese un tamaño definido mayor a 3: ");
-            aux = keyboard.nextLine().charAt(0);
+        while (true) {
+            System.out.print("-> Ingrese un tamaño definido mayor a 4: ");
+            auxString = keyboard.nextLine();
 
-            if (((int) aux - '0') < 4) {
-                System.out.println("\nHa ingresado un bajo del limite, ingrese nuevamente...\n");
-            } else if (Character.isDigit(aux) && ((int) aux - '0') >= 4) {
-                size = aux - '0';
+            for (int i = 0; i < auxString.length(); i++) {
+                if (!Character.isDigit(auxString.charAt(i))) {
+                    isCorrect = false;
+                } else {
+                    isCorrect = true;
+                }
+            }
+
+            if (isCorrect) {
+                size = Integer.valueOf(auxString);
+                if (size <= 4) {
+                    System.out.println("\nHa ingresado un bajo del limite, ingrese nuevamente...\n");
+                } else {
+                    break;
+                }
             } else {
                 System.out.println("\nHa ingresado un valor no numérico, ingrese nuevamente...\n");
                 size = -1;
             }
-        } while (size < 4);
+        }
 
-        do
+        isCorrect = false;
 
-        {
+        do {
             System.out.print("\n-> Ingrese un caracter: ");
             auxString = keyboard.nextLine();
             if (!auxString.isEmpty()) {
@@ -59,27 +102,59 @@ public class App {
                 isCorrect = true;
             } else {
                 System.out.println("\nHa ingresado un valor vacío, ingrese nuevamente...\n");
-                symb = '.';
+                symb = ' ';
                 isCorrect = false;
             }
         } while (!isCorrect);
-        
+
         /*
          * Al crear su clase objeto y haber implementado, acontinuacion deben realizar:
          * ja.forNombre(size, symb);
          * 
          * Y se imprimira su letra
          */
+
+        /*
+         * System.out.println("For - Juan Arroyo");
+         * fj.forNombreJ(size, symb);
+         * System.out.println("\n");
+         * fa.forApellidoA(size, symb);
+         * System.out.println("\n");
+         * fja.forNombreApellidoJA(size, symb);
+         * System.out.println("\n\nWhile - Juan Arroyo");
+         * wj.whileNombreJ(size, symb);
+         * System.out.println("\n");
+         * wa.whileApellidoA(size, symb);
+         * System.out.println("\n");
+         * wja.whileNombreApellidoJA(size, symb);
+         * System.out.println("\n\nDo While - Juan Arroyo");
+         * dwj.doWhileNombreJ(size, symb);
+         * System.out.println("\n");
+         * dwa.doWhileApellido(size, symb);
+         * System.out.println("\n");
+         * dwja.doWhileNombreApellidoJA(size, symb);
+         */
         
-        System.out.println("Size: " + size + ", Symb: " + symb);
-       /*  fc.forApellidoC(size, symb);
-        fs.forNombreS(size,symb);
-        fcs.imprimirIniciales(size,symb);
-        wc.whileApellidoC(size, symb);
-        wsc.whileNombreApellido(size,symb);
-        */
-        ws.whileNombreS(size,symb);
-        
+         /*
+         * System.out.println("For - MarlonChimarroMC");
+         * fm.formarlonm(size, symb);
+         * System.out.println("\n");
+         * fc.forchimarroc(size, symb);
+         * System.out.println("\n");
+         * fmc.formarlonchimarromc(size, symb);
+         * System.out.println("\n\nWhile - MarlonChimarroMC");
+         * wm.whilemarlonm(size, symb);
+         * System.out.println("\n");
+         * wc.whilechimarroc(size, symb);
+         * System.out.println("\n");
+         * wmc.whilemarlonchimarromc(size, symb);
+         * System.out.println("Do While - MarlonChimarroMC");
+         * dwm.dowhilemarlonm(size, symb);
+         * System.out.println("\n");
+         * dwc.dowhilechimarroc(size, symb);
+         * System.out.println("\n");
+         * dwmc.dowhilemarlonchimarromc(size, symb); 
+         */
 
         keyboard.close();
     }
