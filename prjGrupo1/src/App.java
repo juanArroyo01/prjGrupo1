@@ -1,5 +1,14 @@
 import java.util.Scanner;
 
+import JakeBenavides.DoWhileBenavides;
+import JakeBenavides.DoWhileJake;
+import JakeBenavides.DoWhileJakeBenavides;
+import JakeBenavides.ForBenavides;
+import JakeBenavides.ForJakeBenavides;
+import JakeBenavides.ForJakeJ;
+import JakeBenavides.WhileBenavides;
+import JakeBenavides.WhileJake;
+import JakeBenavides.WhileJakeBenavides;
 import juanarroyo.*;
 
 public class App {
@@ -28,6 +37,18 @@ public class App {
          * 
          * Y de esa forma ya se ejecuta el codigo ingresdo dentro de aquel metodo.
          */
+
+         /* 
+            ForJakeJ fjj =  new ForJakeJ();
+            ForBenavides fb = new ForBenavides();
+            ForJakeBenavides fbj = new ForJakeBenavides();
+            WhileJake wjj = new WhileJake();
+            WhileBenavides wb = new WhileBenavides();
+            WhileJakeBenavides wjb = new WhileJakeBenavides();
+            DoWhileJake dwjj = new DoWhileJake();
+            DoWhileBenavides dwb = new DoWhileBenavides();
+            DoWhileJakeBenavides dwjb = new DoWhileJakeBenavides();
+         */ 
 
         char symb;
         String auxString;
