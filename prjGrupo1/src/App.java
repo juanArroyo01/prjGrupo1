@@ -10,6 +10,8 @@ public class App {
         WhileCasaC wc= new WhileCasaC();
         WhileStalinS ws= new WhileStalinS();
         WhileStalinCasaSC wsc = new WhileStalinCasaSC();
+        DoWhileCasaC dwc = new DoWhileCasaC();
+        DoWhileStalinS dws= new DoWhileStalinS();
 
 
         /*
@@ -76,10 +78,14 @@ public class App {
         fcs.imprimirIniciales(size,symb);
         wc.whileApellidoC(size, symb);
         wsc.whileNombreApellido(size,symb);
-        */
+        
         ws.whileNombreS(size,symb);
         
-
+        
+        */
+        dwc.doWhileApellidoC(size , symb);
+        dws.imprimirDoWhileS(size,symb);
+    
         keyboard.close();
     }
 }
