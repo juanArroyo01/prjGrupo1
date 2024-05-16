@@ -14,7 +14,11 @@ public class App {
         ForYupanqui fy = new ForYupanqui();
         ForNiurkaYupanqui fny = new ForNiurkaYupanqui();
         WhileN wn = new WhileN();
-
+        WhileY wy = new WhileY();
+        WhileNY  wny = new WhileNY();
+        DoWhileN dwn = new DoWhileN();
+        DoWhileY dwy = new DoWhileY();
+        DoWhileNY dwny = new DoWhileNY();
         System.out.print("-> Ingrese un tamaño de la letra  (mayor a 4): ");
         size = keyboard.nextInt();
 
@@ -22,10 +26,23 @@ public class App {
         symb = keyboard.next();
         
         fn.forN(size, symb);
+        System.out.println();
         fy.forY(size, symb);
-        System.out.println("---------");
+        System.out.println();
         fny.NY(size, symb);
-        wn.WhileN(size, symb.charAt(0));
+        System.out.println();
+        wn.whileN(size, symb.charAt(0));
+        System.out.println("");
+        wy.whileY(size, symb.charAt(0));
+        System.out.println("");
+        wny.whileNY (size, symb.charAt(0));
+        System.out.println("");
+        dwn.doWhileN(size,symb.charAt(0));
+        System.out.println("");
+        dwy.doWhileY(size, symb.charAt(0));
+        System.out.println("");
+        dwny.doWhileNY(size, symb.charAt(0));
+        
 
 
         /*
