@@ -4,6 +4,7 @@ import marlonchimarro.*;
 import JakeBenavides.*;
 import antonelacasa.*;
 import juanarroyo.*;
+import niurkayupanqui.*;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -58,6 +59,16 @@ public class App {
         DoWhileJake dwjj = new DoWhileJake();
         DoWhileBenavides dwb = new DoWhileBenavides();
         DoWhileJakeBenavides dwjb = new DoWhileJakeBenavides();
+
+        ForNiurka fn = new ForNiurka();
+        ForYupanqui fy = new ForYupanqui();
+        ForNiurkaYupanqui fny = new ForNiurkaYupanqui();
+        WhileN wn = new WhileN();
+        WhileY wy = new WhileY();
+        WhileNY wny = new WhileNY();
+        DoWhileN dwn = new DoWhileN();
+        DoWhileY dwy = new DoWhileY();
+        DoWhileNY dwny = new DoWhileNY();
 
         char symb;
         String auxString;
@@ -201,6 +212,25 @@ public class App {
         dwan.dowhileAntonelaA(size, symb);
         System.out.println("\n");
         dwac.dowhileAntonelaCasaAC(size, symb, symb);
+
+        System.out.println("\nFor - Niurka Yupanqui");
+        fn.forN(size, symb);
+        System.out.println("\n");
+        fy.forY(size, symb);
+        System.out.println("\n");
+        fny.NY(size, symb);
+        System.out.println("\n\nWhile - Niurka Yupanqui");
+        wn.whileN(size, symb);
+        System.out.println("\n");
+        wy.whileY(size, symb);
+        System.out.println("\n");
+        wny.whileNY(size, symb);
+        System.out.println("\n\nDo While - Niurka Yupanqui");
+        dwn.doWhileN(size, symb);
+        System.out.println("\n");
+        dwy.doWhileY(size, symb);
+        System.out.println("\n");
+        dwny.doWhileNY(size, symb);
 
         keyboard.close();
     }
